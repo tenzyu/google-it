@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  google-it:
+    container_name: google-it
+    image: node
+    volumes:
+      - /home/deploy/google-it:/code
+    working_dir: /code
+    command: npm start
+    restart: always

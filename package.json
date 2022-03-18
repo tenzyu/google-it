@@ -1,0 +1,43 @@
+{
+  "name": "google-it",
+  "version": "1.0.0",
+  "description": "a Discord bot",
+  "keywords": [
+    "Discord", "bot", "Google"
+  ],
+  "author": "tenzyu masuda <tenzyu.on@gmail.com>",
+  "license": "MIT",
+  "main": "opt/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node opt/index.js",
+    "debug": "ts-node src/index.ts",
+    "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit",
+    "lint": "eslint --ext .ts --ignore-path .gitignore ."
+  },
+  "homepage": "https://github.com/tenzyu/google-it#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenzyu/google-it.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tenzyu/google-it/issues"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
