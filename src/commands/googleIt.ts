@@ -14,7 +14,7 @@ export default {
   async execute (interaction: CommandInteraction) {
     const word = interaction.options.getString('word') as string
     const fixedWord = word.replace(/\s/g, '+')
-    const url = `https://www.google.com/search?q=${fixedWord}`
+    const url = `https://google.com/search?q=${fixedWord}`
     await interaction.reply(url)
   }
 }
